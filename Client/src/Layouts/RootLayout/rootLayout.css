@@ -1,0 +1,20 @@
+.root-layout {
+    padding: 16px 64px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+            font-size: 20px;
+        }
+    }
+
+    main{
+        flex: 1;
+        overflow: hidden;
+    }
+}

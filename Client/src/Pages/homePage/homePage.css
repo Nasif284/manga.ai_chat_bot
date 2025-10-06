@@ -1,0 +1,82 @@
+.homePage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 100px;
+
+    .left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        h1 {
+            font-size: 108px;
+            background: linear-gradient(to right, #217bfe, #e55571);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        h3 {
+            font-weight: 600;
+        }
+
+        a {
+            display: flex;
+            cursor: pointer;
+            padding: 15px 25px;
+            background-color: #217bfe;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+                background-color: white;
+                color: #217bfe;
+            }
+        }
+        .orbit{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            opacity: .05;
+            z-index: -1;
+        }
+
+        p {
+            font-size: 13px;
+            max-width: 40%;
+        }
+        .chat{
+            display: flex;
+            margin-top: 20px;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 8px !important;
+            padding: 10px;
+            background-color: rgb(105, 104, 104);
+            border-radius: 20px;
+            .imgWrapper{
+                height: 25px;
+                width: 25px;
+                border-radius: 100%;
+                overflow: hidden;
+                object-fit: cover;
+             
+
+                img{
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+
+}
