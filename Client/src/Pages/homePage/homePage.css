@@ -14,9 +14,25 @@
         justify-content: center;
         text-align: center;
 
-        h1 {
-            font-size: 108px;
-            background: linear-gradient(to right, #217bfe, #e55571);
+        .title{
+                font-size: 110px;
+                    background: linear-gradient(to right, #f3fe21, #bb8c01);
+                    -webkit-background-clip: text;
+                    color: transparent;
+        }
+
+        .logo{
+            display: flex;
+            img{
+                width: 100%;
+                height: 130px;
+            }
+        }
+
+        .subTitle {
+            margin-top: -10px;
+            font-size: 50px;
+            background: linear-gradient(to right, #b39438, #e55571);
             -webkit-background-clip: text;
             color: transparent;
         }
@@ -29,7 +45,7 @@
             display: flex;
             cursor: pointer;
             padding: 15px 25px;
-            background-color: #217bfe;
+            background-color: #feb421;
             border-radius: 10px;
             color: white;
             font-size: 15px;
@@ -38,7 +54,7 @@
 
             &:hover {
                 background-color: white;
-                color: #217bfe;
+                color: #feb421;
             }
         }
         .orbit{

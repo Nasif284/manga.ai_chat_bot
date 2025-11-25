@@ -13,6 +13,11 @@
         gap: 20px;
     }
 
+        .logoImg{
+        height: 40px !important;
+        width: 100% !important;
+        }
+    
     .options {
         display: flex;
         gap: 20px;

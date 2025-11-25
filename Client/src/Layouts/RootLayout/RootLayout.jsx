@@ -4,6 +4,7 @@ import { Link, Outlet } from 'react-router-dom'
 import { ClerkProvider, SignedIn, UserButton } from '@clerk/clerk-react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import ContextProvider from '../../context/ContextProvider';
+import mango from '../../assets/mango.png'
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 const RootLayout = () => {
   const queryClient = new QueryClient();
@@ -14,7 +15,11 @@ const RootLayout = () => {
           <div className="root-layout">
             <header>
               <Link to={"/"}>
-                <h1>Ai Chat Bot</h1>
+                <div className="logo">
+                  <img src={mango} alt="" />
+                  <h1 className="title">Manga.ai</h1>
+                  
+                </div>
               </Link>
               <div className="user">
                 <SignedIn>

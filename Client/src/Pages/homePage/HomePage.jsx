@@ -5,16 +5,22 @@ import { Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
 import bot from "../../assets/bot.png";
 import human from "../../assets/human1.jpeg";
+import mango from "../../assets/mango.png"
 const HomePage = () => {
   const [isBot, setIsBot] = useState(false);
   return (
     <div className="homePage">
       <div className="left">
         <img className="orbit" src={orbital} alt="" />
-        <h1>Ai Chat Bot</h1>
+        <div className="logo">
+          <img src={mango} alt="" />
+          <h1 className="title">Manga.ai</h1>
+        </div>
+
+        <h1 className="subTitle">Ai Chat Bot</h1>
         <h3>Supercharge your productivity and creativity with Ai Chat Bot</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium aperiam quod omnis asperiores possimus officiis dicta itaque voluptate nam odit optio, ex minus, aliquam modi quisquam est eligendi.</p>
-        <Link to={"/dashboard" }>Get Started</Link>
+        <Link to={"/dashboard"}>Get Started</Link>
         <div className="chat">
           <div className="imgWrapper">
             <img src={isBot ? bot : human} alt="" />
